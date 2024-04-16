@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/createProd.css">
+    <title>Products Crud</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Products Crud</div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button class="searchButton" type="submit">
+                <img src="images/search-icon.svg" alt="">
+            </button>
+        </div>
+        
+            <a class="createBtn" href="index.html">Go Back to Product</a>
+        
+    </nav>
+    <div class="container">
+        <h1>Create Product</h1>
+        <div class="create">
+        <div class="title">
+            <label for="title">Product Title</label>
+            <input type="text" name="title" id="title">
+        </div>
+
+        <div class="img">
+            <label>Product Image</label>
+            <input type="file" name="image" id="image">
+        </div>
+        
+        <div class="description">
+            <label for="desc">Product Description</label>
+            <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+        </div>
+        <div class="date">
+            <label for="date">Create Date</label>
+            <input type="date" name="date" id="date" >
+        </div>
+        <div class="price">
+            <label for="price">Product Price</label>
+            <input type="number" name="price" id="price"  step="05">
+        </div>
+
+        <button class="createProduct" href="#">Create Product</button>
+    </div>
+    </div>
+
+    <script type="module" src="script/createProducts.js"></script>
+</body>
+</html>
